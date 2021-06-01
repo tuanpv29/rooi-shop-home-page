@@ -7,7 +7,7 @@
         content="IE=edge">
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ROOISHOP</title>
 
   <link rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -15,8 +15,7 @@
         href="./assets/css/main.css">
 </head>
 
-<body>
-
+<body id="top">
   <header>
     <div id="header-top-line"
          class="bg-primary">
@@ -131,20 +130,42 @@
       </div>
     </div>
 
+    <div id="header-logo"
+         class="bg-white d-none d-lg-block">
+      <div class="container-xl">
+        <nav class="navbar navbar-expand-sm navbar-light justify-content-between">
+          <a class="navbar-brand"
+             href="#">ROOISHOP</a>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2"
+                   type="text"
+                   placeholder="Search">
+            <button class="btn btn-primary"
+                    type="submit">Search</button>
+          </form>
+        </nav>
+      </div>
+    </div>
+
     <div id="header-main"
          class="bg-white">
       <div class="container-xl">
         <nav class="navbar navbar-expand-lg bg-white navbar-light">
-          <div class="container-xl">
+          <div class="container-xl py-3 py-lg-0">
             <button class="navbar-toggler"
                     type="button"
                     data-toggle="collapse"
                     data-target="#collapsibleNavbar">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-between"
+            <a class="text-uppercase shop-cart d-block d-lg-none ml-auto"
+               href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+
+            <div class="collapse navbar-collapse justify-content-between py-3 py-lg-0"
                  id="collapsibleNavbar">
-              <a class="nav-link text-uppercase home"
+              <a class="text-uppercase home d-none d-lg-block"
                  href="#">
                 <i class="fas fa-home"></i>
               </a>
@@ -177,8 +198,68 @@
                   <a class="nav-link text-uppercase"
                      href="#">Custom</a>
                 </li>
+
+                <li class="nav-item d-block d-lg-none">
+                  <a class="nav-link text-uppercase"
+                     href="#">My Account</a>
+                </li>
+                <li class="nav-item d-block d-lg-none">
+                  <a class="nav-link text-uppercase"
+                     href="#">Checkout</a>
+                </li>
+                <li class="nav-item d-block d-lg-none">
+                  <a class="nav-link text-uppercase"
+                     href="#">Blog</a>
+                </li>
+                <li class="nav-item dropdown d-block d-lg-none">
+                  <a class="nav-link text-uppercase dropdown-toggle"
+                     data-toggle="dropdown"
+                     href="#">Company</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item"
+                       href="#">
+                      <span class="text-uppercase">About Us</span>
+                    </a>
+                    <a class="dropdown-item"
+                       href="#">
+                      <span class="text-uppercase">Customer Service</span>
+                    </a>
+                    <a class="dropdown-item"
+                       href="#">
+                      <span class="text-uppercase">Privacy Policy</span>
+                    </a>
+                    <a class="dropdown-item"
+                       href="#">
+                      <span class="text-uppercase">Site Map</span>
+                    </a>
+                    <a class="dropdown-item"
+                       href="#">
+                      <span class="text-uppercase">Search Terms</span>
+                    </a>
+                    <a class="dropdown-item"
+                       href="#">
+                      <span class="text-uppercase">Advanced Search</span>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item d-block d-lg-none">
+                  <a class="nav-link text-uppercase"
+                     href="#">Login</a>
+                </li>
+
+                <li class="nav-item d-block d-lg-none">
+                  <span class="nav-link">
+                    <form class="form-inline ml-auto d-block d-lg-none">
+                      <input class="form-control mr-sm-2"
+                             type="text"
+                             placeholder="Search">
+                      <button class="btn btn-primary"
+                              type="submit">Search</button>
+                    </form>
+                  </span>
+                </li>
               </ul>
-              <a class="nav-link text-uppercase shop-cart"
+              <a class="text-uppercase shop-cart d-none d-lg-block"
                  href="#">
                 <i class="fas fa-shopping-cart"></i>
               </a>
@@ -191,7 +272,7 @@
 
   <main>
     <div class="container-xl">
-      <div class="row py-3">
+      <div class="row py-5">
         <div class="col-12">
           <div id="carouselExampleIndicators"
                class="carousel slide"
@@ -254,51 +335,42 @@
         </div>
       </div>
 
-      <div class="row py-3">
-        <div class="col-sm-12 col-md-3">
+      <div class="row py-5">
+        <div class="col-sm-12 col-md-4">
           <div class="card rounded-0">
             <div class="card-body">
               <div class="feature-box">
-                <span class="icon">
-                  <i class="fas fa-truck"></i>
-                </span>
-                <span>Free shipping on order over $99</span>
+                <div class="icon">
+                  <i class="fas fa-truck text-primary"></i>
+                </div>
+                <h5 class="text-uppercase">Delivery</h5>
+                <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-3">
+        <div class="col-sm-12 col-md-4">
           <div class="card rounded-0">
             <div class="card-body">
               <div class="feature-box">
-                <span class="icon">
-                  <i class="fas fa-phone"></i>
-                </span>
-                <span>Need help +123 456 789</span>
+                <div class="icon">
+                  <i class="fas fa-phone text-success"></i>
+                </div>
+                <h5 class="text-uppercase">Support</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-3">
+        <div class="col-sm-12 col-md-4">
           <div class="card rounded-0">
             <div class="card-body">
               <div class="feature-box">
-                <span class="icon">
-                  <i class="fas fa-money-check-alt"></i>
-                </span>
-                <span>Money back guarantee</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-3">
-          <div class="card rounded-0">
-            <div class="card-body">
-              <div class="feature-box">
-                <span class="icon">
-                  <i class="fas fa-briefcase"></i>
-                </span>
-                <span>30 days return service</span>
+                <div class="icon">
+                  <i class="fas fa-briefcase text-danger"></i>
+                </div>
+                <h5 class="text-uppercase">Service</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
               </div>
             </div>
           </div>
@@ -309,18 +381,30 @@
         <div class="col-12">
           <div class="card rounded-0">
             <div class="card-header d-flex justify-content-between align-items-center">
-              <span>New Product</span>
-              <div>
-                <button type="button"
-                        class="btn active">Women</button>
-                <button type="button"
-                        class="btn">Furniture</button>
-                <button type="button"
-                        class="btn">Men</button>
-                <button type="button"
-                        class="btn">Kids</button>
-                <button type="button"
-                        class="btn">Accessories</button>
+              <h4>New Product</h4>
+              <div class="chips">
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link chip active"
+                       href="#">Women</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link chip"
+                       href="#">Men</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link chip"
+                       href="#">Kids</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link chip"
+                       href="#">Furniture</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link chip"
+                       href="#">Accessories</a>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="card-body">
@@ -335,7 +419,7 @@
                       card's
                       content.</p>
                     <a href="#"
-                       class="btn">Go somewhere</a>
+                       class="btn btn-primary">Add to cart</a>
                   </div>
                 </div>
                 <div class="card rounded-0">
@@ -348,7 +432,7 @@
                       card's
                       content.</p>
                     <a href="#"
-                       class="btn">Go somewhere</a>
+                       class="btn btn-primary">Add to cart</a>
                   </div>
                 </div>
                 <div class="card rounded-0">
@@ -361,7 +445,7 @@
                       card's
                       content.</p>
                     <a href="#"
-                       class="btn">Go somewhere</a>
+                       class="btn btn-primary">Add to cart</a>
                   </div>
                 </div>
                 <div class="card rounded-0">
@@ -374,119 +458,48 @@
                       card's
                       content.</p>
                     <a href="#"
-                       class="btn">Go somewhere</a>
+                       class="btn btn-primary">Add to cart</a>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row py-3">
-        <div class="col-4">
-          <div id="carousel-2"
-               class="carousel slide"
-               data-ride="carousel">
-            <ul class="carousel-indicators">
-              <li data-target="#carousel-2"
-                  data-slide-to="0"
-                  class="active"></li>
-              <li data-target="#carousel-2"
-                  data-slide-to="1"></li>
-              <li data-target="#carousel-2"
-                  data-slide-to="2"></li>
-            </ul>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="carousel-img"
-                     src="./assets/img/first-slide.svg">
-                <div class="carousel-caption">
-                  <h3>Los Angeles</h3>
-                  <p>We had such a great time in LA!</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img class="carousel-img"
-                     src="./assets/img/second-slide.svg">
-                <div class="carousel-caption">
-                  <h3>Los Angeles</h3>
-                  <p>We had such a great time in LA!</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img class="carousel-img"
-                     src="./assets/img/third-slide.svg">
-                <div class="carousel-caption">
-                  <h3>Los Angeles</h3>
-                  <p>We had such a great time in LA!</p>
-                </div>
-              </div>
-            </div>
-            <a class="carousel-control-prev"
-               href="#carousel-2"
-               data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next"
-               href="#carousel-2"
-               data-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </a>
-          </div>
-        </div>
-        <div class="col-8">
-          <div class="row">
-            <div class="col-6 mb-3">
-              <img class="img-fluid"
-                   src="./assets/img/ads-02.jpeg"
-                   alt="">
-            </div>
-            <div class="col-6 mb-3">
-              <img class="img-fluid"
-                   src="./assets/img/ads-02.jpeg"
-                   alt="">
-            </div>
-            <div class="col-12">
-              <img class="img-fluid"
-                   src="./assets/img/ads-05.jpeg"
-                   alt="">
             </div>
           </div>
         </div>
       </div>
 
       <div class="row py-5">
-        <div class="card rounded-0">
-          <div class="card-header">
-            Latest Blog
-          </div>
-          <div class="card-body">
-            <div class="card-group">
-              <div class="card rounded-0">
-                <img class="card-img-top p-1"
-                     src="./assets/img/image-cap.svg"
-                     alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                  <a href="#"
-                     class="btn">Read more</a>
+        <div class="col-12">
+          <div class="card rounded-0">
+            <div class="card-header">
+              <h4>Latest Blog</h4>
+            </div>
+            <div class="card-body">
+              <div class="card-group">
+                <div class="card rounded-0">
+                  <img class="card-img-top p-1"
+                       src="./assets/img/image-cap.svg"
+                       alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.</p>
+                    <a href="#"
+                       class="btn btn-outline-primary">Read more</a>
+                  </div>
                 </div>
-              </div>
-              <div class="card rounded-0">
-                <img class="card-img-top p-1"
-                     src="./assets/img/image-cap.svg"
-                     alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                  <a href="#"
-                     class="btn">Read more</a>
+                <div class="card rounded-0">
+                  <img class="card-img-top p-1"
+                       src="./assets/img/image-cap.svg"
+                       alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.</p>
+                    <a href="#"
+                       class="btn btn-outline-primary">Read more</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -497,156 +510,125 @@
   </main>
 
   <footer>
-    <div id="footer" class="text-light">
-      <div class="container-xl">
-        <div class="row border-bottom py-5">
-          <div class="col-12 d-flex justify-content-center">
-            <form class="form-inline"
-                  action="/action_page.php">
-              <label for="email"
-                     class="mr-sm-2">Email address:</label>
-              <input type="email"
-                     class="form-control mb-2 mr-sm-2"
-                     placeholder="Enter email"
-                     id="email">
-              <button type="submit"
-                      class="btn mb-2">Submit</button>
-            </form>
-          </div>
-        </div>
-
-        <div class="row py-5">
-          <div class="col-8">
-            <div class="row">
-              <div class="col-4">
-                <h4>My account</h4>
-                <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link"
-                       href="#">login</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"
-                       href="#">About us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"
-                       href="#">Wishlist</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"
-                       href="#">Checkout</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"
-                       href="#">FAQs</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"
-                       href="#">Contact us</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-4">
-                <h4>My account</h4>
-                <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link"
-                       href="#">login</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"
-                       href="#">About us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"
-                       href="#">Wishlist</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"
-                       href="#">Checkout</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"
-                       href="#">FAQs</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"
-                       href="#">Contact us</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-4">
-                <h4>Style Advisor</h4>
-                <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link"
-                       href="#">Your Account</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"
-                       href="#">Information</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"
-                       href="#">Addresses</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"
-                       href="#">Discount</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"
-                       href="#">Orders History</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"
-                       href="#">Additional Information</a>
-                  </li>
-                </ul>
-              </div>
+    <div class="footer">
+      <div class="footer-content">
+        <div class="container-xl">
+          <div class="row">
+            <div class="col-6 col-md-3">
+              <h5>Navigate</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="#"
+                     class="nav-link text-white">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"
+                     class="nav-link text-white">Pages</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"
+                     class="nav-link text-white">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"
+                     class="nav-link text-white">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"
+                     class="nav-link text-white">Elements</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-5">
+              <h5>Contact</h5>
+              <ul class="list-unstyled">
+                <li class="mb-3 d-flex">
+                  <div class="ml-3">
+                    <span>348 Greenpoint Avenue
+                      <br>Brooklyn, NY</span>
+                  </div>
+                </li>
+                <li class="mb-3 d-flex">
+                  <div class="ml-3">
+                    <span>+0123 456 789</span>
+                    <span class="d-block text-muted text-small">Mon - Fri 9am - 5pm</span>
+                  </div>
+                </li>
+                <li class="mb-3 d-flex">
+                  <div class="ml-3">
+                    <a href="#"
+                       class="text-white">example@gmail.com</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4 py-5 py-md-0">
+              <h5>Subscribe</h5>
+              <p>The latest Leap news, articles, and resources, sent straight to your inbox every month.</p>
+              <form>
+                <input type="email"
+                       class="form-control mb-2"
+                       placeholder="Email Address"
+                       name="email">
+                <button type="submit"
+                        class="btn btn-primary btn-block">
+                  <span>Subscribe</span>
+                </button>
+              </form>
+              <small class="text-muted form-text">We’ll never share your details. See our <a href="#">Privacy Policy</a>
+              </small>
             </div>
           </div>
-
-          <div class="col-4">
-            <div class="row">
-              <div class="col-12">
-                <h4>Follow us</h4>
-                <div class="social-media">
-                  <i class="fab fa-facebook-f"></i>
-                  <i class="fab fa-twitter"></i>
-                  <i class="fab fa-google"></i>
-                  <i class="fas fa-rss"></i>
-                  <i class="fab fa-pinterest-p"></i>
-                  <i class="fab fa-instagram"></i>
-                  <i class="fab fa-youtube"></i>
-                </div>
-              </div>
-              <div class="col-12">
-                <h4>Payment Option</h4>
-                <div class="payment-accept">
-                  <img src="./assets/img/payment-1.png"
-                       alt="">
-                  <img src="./assets/img/payment-2.png"
-                       alt="">
-                  <img src="./assets/img/payment-3.png"
-                       alt="">
-                  <img src="./assets/img/payment-4.png"
-                       alt="">
-                </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="social-media">
+                <ul class="nav justify-content-center">
+                  <li class="nav-item">
+                    <a href=""
+                       class="nav-link text-white">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href=""
+                       class="nav-link text-white">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href=""
+                       class="nav-link text-white">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href=""
+                       class="nav-link text-white">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href=""
+                       class="nav-link text-white">
+                      <i class="fab fa-google"></i>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="footer-bar">
+        <small class="text-muted">© 2021 Boomerang, All Rights Reserved. Design with love by Pig</small>
+      </div>
     </div>
-    <div class="col-12 copy-right">
-      <small>© All rights reserved. Made by Tuanbeo</small>
-    </div>
-    <button onclick="topFunction()" class="btn" id="backToTop" title="Go to top">Top</button>
+    <a id="backToTop"
+       class="btn btn-primary btn-round"
+       onclick="topFunction()">
+      <i class="fas fa-arrow-up"></i>
+    </a>
   </footer>
-
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
