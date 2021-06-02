@@ -13,6 +13,8 @@
         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet"
         href="./assets/css/main.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto'
+        rel='stylesheet'>
 </head>
 
 <body id="top">
@@ -32,10 +34,18 @@
                 <div class="dropdown-menu">
                   <a class="dropdown-item"
                      href="#">
+                    <span>
+                      <img src="./assets/img/united-kingdom.png"
+                           alt="English">
+                    </span>
                     <span class="text-uppercase">English</span>
                   </a>
                   <a class="dropdown-item"
                      href="#">
+                    <span>
+                      <img src="./assets/img/vietnam.png"
+                           alt="Vietnamese">
+                    </span>
                     <span class="text-uppercase">Vietnamese</span>
                   </a>
                 </div>
@@ -49,11 +59,19 @@
                 <div class="dropdown-menu">
                   <a class="dropdown-item"
                      href="#">
+                    <span>
+                      <img src="./assets/img/dollar.png"
+                           alt="Dollar">
+                    </span>
                     <span class="text-uppercase">Dollar</span>
                   </a>
                   <a class="dropdown-item"
                      href="#">
-                    <span class="text-uppercase">Vnd</span>
+                    <span>
+                      <img src="./assets/img/dong.png"
+                           alt="Dong">
+                    </span>
+                    <span class="text-uppercase">Dong</span>
                   </a>
                 </div>
               </li>
@@ -131,41 +149,58 @@
     </div>
 
     <div id="header-logo"
-         class="bg-white d-none d-lg-block">
+         class="d-none d-lg-block">
       <div class="container-xl">
         <nav class="navbar navbar-expand-sm navbar-light justify-content-between">
-          <a class="navbar-brand"
-             href="#">ROOISHOP</a>
-          <form class="form-inline">
-            <input class="form-control mr-sm-2"
-                   type="text"
-                   placeholder="Search">
-            <button class="btn btn-primary"
-                    type="submit">Search</button>
-          </form>
+          <div>
+            <a class="navbar-brand text-white"
+               href="#">ROOISHOP</a>
+          </div>
+          <div class="flex-grow-1">
+            <form class="form-inline justify-content-center">
+              <input class="form-control w-50 mr-sm-2"
+                     type="text"
+                     placeholder="Search">
+              <button class="btn btn-primary"
+                      type="submit">Search</button>
+            </form>
+          </div>
+          <div class="text-white">
+            <h4>
+              <i class="fas fa-mobile-alt mr-2"></i>
+              <span>+0123 456 789</span>
+            </h4>
+          </div>
         </nav>
       </div>
+      <div class="hero-image"></div>
     </div>
 
     <div id="header-main"
          class="bg-white">
       <div class="container-xl">
-        <nav class="navbar navbar-expand-lg bg-white navbar-light">
-          <div class="container-xl py-3 py-lg-0">
-            <button class="navbar-toggler"
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-xl">
+            <button class="navbar-toggler mr-2"
                     type="button"
                     data-toggle="collapse"
                     data-target="#collapsibleNavbar">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="text-uppercase shop-cart d-block d-lg-none ml-auto"
-               href="#">
-              <i class="fas fa-shopping-cart"></i>
-            </a>
+            <div class="flex-grow-1 d-lg-none">
+              <div class="d-flex justify-content-between">
+                <a class="navbar-brand"
+                   href="#">ROOISHOP</a>
+                <a class="shop-cart"
+                   href="#">
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+              </div>
+            </div>
 
-            <div class="collapse navbar-collapse justify-content-between py-3 py-lg-0"
+            <div class="collapse navbar-collapse justify-content-between"
                  id="collapsibleNavbar">
-              <a class="text-uppercase home d-none d-lg-block"
+              <a class="home d-none d-lg-block"
                  href="#">
                 <i class="fas fa-home"></i>
               </a>
@@ -246,20 +281,19 @@
                   <a class="nav-link text-uppercase"
                      href="#">Login</a>
                 </li>
-
                 <li class="nav-item d-block d-lg-none">
                   <span class="nav-link">
                     <form class="form-inline ml-auto d-block d-lg-none">
-                      <input class="form-control mr-sm-2"
+                      <input class="form-control"
                              type="text"
                              placeholder="Search">
-                      <button class="btn btn-primary"
+                      <button class="btn btn-primary mt-1 mt-sm-0"
                               type="submit">Search</button>
                     </form>
                   </span>
                 </li>
               </ul>
-              <a class="text-uppercase shop-cart d-none d-lg-block"
+              <a class="shop-cart d-none d-lg-block"
                  href="#">
                 <i class="fas fa-shopping-cart"></i>
               </a>
@@ -274,16 +308,16 @@
     <div class="container-xl">
       <div class="row py-5">
         <div class="col-12">
-          <div id="carouselExampleIndicators"
+          <div id="slider"
                class="carousel slide"
                data-ride="carousel">
             <ul class="carousel-indicators">
-              <li data-target="#demo"
+              <li data-target="#slider"
                   data-slide-to="0"
                   class="active"></li>
-              <li data-target="#demo"
+              <li data-target="#slider"
                   data-slide-to="1"></li>
-              <li data-target="#demo"
+              <li data-target="#slider"
                   data-slide-to="2"></li>
             </ul>
             <div class="carousel-inner">
@@ -316,7 +350,7 @@
               </div>
             </div>
             <a class="carousel-control-prev"
-               href="#carouselExampleIndicators"
+               href="#slider"
                role="button"
                data-slide="prev">
               <span class="carousel-control-prev-icon"
@@ -324,7 +358,7 @@
               <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next"
-               href="#carouselExampleIndicators"
+               href="#slider"
                role="button"
                data-slide="next">
               <span class="carousel-control-next-icon"
@@ -334,131 +368,175 @@
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="container-xl">
       <div class="row py-5">
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-4 mb-3 mb-md-0">
           <div class="card rounded-0">
             <div class="card-body">
-              <div class="feature-box">
-                <div class="icon">
-                  <i class="fas fa-truck text-primary"></i>
+              <div class="features-icons-item">
+                <div class="features-icons-icon d-flex mb-4">
+                  <i class="fas fa-truck mx-auto text-secondary"></i>
                 </div>
-                <h5 class="text-uppercase">Delivery</h5>
-                <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <h3>Title Feature</h3>
+                <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-4 mb-3 mb-md-0">
           <div class="card rounded-0">
             <div class="card-body">
-              <div class="feature-box">
-                <div class="icon">
-                  <i class="fas fa-phone text-success"></i>
+              <div class="features-icons-item">
+                <div class="features-icons-icon d-flex mb-4">
+                  <i class="fas fa-phone mx-auto text-secondary"></i>
                 </div>
-                <h5 class="text-uppercase">Support</h5>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <h3>Title Feature</h3>
+                <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-4 mb-3 mb-md-0">
           <div class="card rounded-0">
             <div class="card-body">
-              <div class="feature-box">
-                <div class="icon">
-                  <i class="fas fa-briefcase text-danger"></i>
+              <div class="features-icons-item">
+                <div class="features-icons-icon d-flex mb-4">
+                  <i class="fas fa-briefcase mx-auto text-secondary"></i>
                 </div>
-                <h5 class="text-uppercase">Service</h5>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <h3>Title Feature</h3>
+                <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="container-xl">
       <div class="row py-5">
         <div class="col-12">
-          <div class="card rounded-0">
-            <div class="card-header d-flex justify-content-between align-items-center">
-              <h4>New Product</h4>
-              <div class="chips">
-                <ul class="nav">
-                  <li class="nav-item">
-                    <a class="nav-link chip active"
-                       href="#">Women</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link chip"
-                       href="#">Men</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link chip"
-                       href="#">Kids</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link chip"
-                       href="#">Furniture</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link chip"
-                       href="#">Accessories</a>
-                  </li>
-                </ul>
-              </div>
+          <div class="card new-products-card rounded-0">
+            <div class="card-header d-flex justify-content-between">
+              <span class="font-weight-bold">New Product</span>
+              <a class="text-dark"
+                 href="#">
+                <small>View more</small>
+              </a>
             </div>
             <div class="card-body">
-              <div class="card-group">
-                <div class="card rounded-0">
-                  <img class="card-img-top p-1"
-                       src="./assets/img/image-cap.svg"
-                       alt="Card image cap">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's
-                      content.</p>
-                    <a href="#"
-                       class="btn btn-primary">Add to cart</a>
+              <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 p-1">
+                  <div class="card rounded-0">
+                    <img class="card-img-top p-1"
+                         src="./assets/img/image-cap.svg"
+                         alt="Card image cap">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                      <a href="#"
+                         class="btn btn-primary">Add to cart</a>
+                    </div>
                   </div>
                 </div>
-                <div class="card rounded-0">
-                  <img class="card-img-top p-1"
-                       src="./assets/img/image-cap.svg"
-                       alt="Card image cap">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's
-                      content.</p>
-                    <a href="#"
-                       class="btn btn-primary">Add to cart</a>
+                <div class="col-sm-6 col-md-4 col-lg-3 p-1">
+                  <div class="card rounded-0">
+                    <img class="card-img-top p-1"
+                         src="./assets/img/image-cap.svg"
+                         alt="Card image cap">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                      <a href="#"
+                         class="btn btn-primary">Add to cart</a>
+                    </div>
                   </div>
                 </div>
-                <div class="card rounded-0">
-                  <img class="card-img-top p-1"
-                       src="./assets/img/image-cap.svg"
-                       alt="Card image cap">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's
-                      content.</p>
-                    <a href="#"
-                       class="btn btn-primary">Add to cart</a>
+                <div class="col-sm-6 col-md-4 col-lg-3 p-1">
+                  <div class="card rounded-0">
+                    <img class="card-img-top p-1"
+                         src="./assets/img/image-cap.svg"
+                         alt="Card image cap">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                      <a href="#"
+                         class="btn btn-primary">Add to cart</a>
+                    </div>
                   </div>
                 </div>
-                <div class="card rounded-0">
-                  <img class="card-img-top p-1"
-                       src="./assets/img/image-cap.svg"
-                       alt="Card image cap">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's
-                      content.</p>
-                    <a href="#"
-                       class="btn btn-primary">Add to cart</a>
+                <div class="col-sm-6 col-md-4 col-lg-3 p-1">
+                  <div class="card rounded-0">
+                    <img class="card-img-top p-1"
+                         src="./assets/img/image-cap.svg"
+                         alt="Card image cap">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                      <a href="#"
+                         class="btn btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 p-1">
+                  <div class="card rounded-0">
+                    <img class="card-img-top p-1"
+                         src="./assets/img/image-cap.svg"
+                         alt="Card image cap">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                      <a href="#"
+                         class="btn btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 p-1">
+                  <div class="card rounded-0">
+                    <img class="card-img-top p-1"
+                         src="./assets/img/image-cap.svg"
+                         alt="Card image cap">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                      <a href="#"
+                         class="btn btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 p-1">
+                  <div class="card rounded-0">
+                    <img class="card-img-top p-1"
+                         src="./assets/img/image-cap.svg"
+                         alt="Card image cap">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                      <a href="#"
+                         class="btn btn-primary">Add to cart</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -466,12 +544,14 @@
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="container-xl">
       <div class="row py-5">
         <div class="col-12">
-          <div class="card rounded-0">
+          <div class="card blog-card rounded-0">
             <div class="card-header">
-              <h4>Latest Blog</h4>
+              <span class="font-weight-bold">Latest Blog</span>
             </div>
             <div class="card-body">
               <div class="card-group">
@@ -510,32 +590,32 @@
   </main>
 
   <footer>
-    <div class="footer">
-      <div class="footer-content">
+    <div class="footer-content">
+      <div class="jumbotron jumbotron-fluid mb-0">
         <div class="container-xl">
           <div class="row">
             <div class="col-6 col-md-3">
-              <h5>Navigate</h5>
+              <h5 class="px-3">Navigate</h5>
               <ul class="nav flex-column">
                 <li class="nav-item">
                   <a href="#"
-                     class="nav-link text-white">Home</a>
+                     class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                   <a href="#"
-                     class="nav-link text-white">Pages</a>
+                     class="nav-link">Pages</a>
                 </li>
                 <li class="nav-item">
                   <a href="#"
-                     class="nav-link text-white">Blog</a>
+                     class="nav-link">Blog</a>
                 </li>
                 <li class="nav-item">
                   <a href="#"
-                     class="nav-link text-white">Portfolio</a>
+                     class="nav-link">Portfolio</a>
                 </li>
                 <li class="nav-item">
                   <a href="#"
-                     class="nav-link text-white">Elements</a>
+                     class="nav-link">Elements</a>
                 </li>
               </ul>
             </div>
@@ -543,21 +623,20 @@
               <h5>Contact</h5>
               <ul class="list-unstyled">
                 <li class="mb-3 d-flex">
-                  <div class="ml-3">
+                  <div>
                     <span>348 Greenpoint Avenue
                       <br>Brooklyn, NY</span>
                   </div>
                 </li>
                 <li class="mb-3 d-flex">
-                  <div class="ml-3">
+                  <div>
                     <span>+0123 456 789</span>
                     <span class="d-block text-muted text-small">Mon - Fri 9am - 5pm</span>
                   </div>
                 </li>
                 <li class="mb-3 d-flex">
-                  <div class="ml-3">
-                    <a href="#"
-                       class="text-white">example@gmail.com</a>
+                  <div>
+                    <span>example@gmail.com</span>
                   </div>
                 </li>
               </ul>
@@ -584,32 +663,27 @@
               <div class="social-media">
                 <ul class="nav justify-content-center">
                   <li class="nav-item">
-                    <a href=""
-                       class="nav-link text-white">
+                    <a class="nav-link">
                       <i class="fab fa-twitter"></i>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href=""
-                       class="nav-link text-white">
+                    <a class="nav-link">
                       <i class="fab fa-facebook-f"></i>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href=""
-                       class="nav-link text-white">
+                    <a class="nav-link">
                       <i class="fab fa-youtube"></i>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href=""
-                       class="nav-link text-white">
+                    <a class="nav-link">
                       <i class="fab fa-instagram"></i>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href=""
-                       class="nav-link text-white">
+                    <a class="nav-link">
                       <i class="fab fa-google"></i>
                     </a>
                   </li>
@@ -619,9 +693,9 @@
           </div>
         </div>
       </div>
-      <div class="footer-bar">
-        <small class="text-muted">© 2021 Boomerang, All Rights Reserved. Design with love by Pig</small>
-      </div>
+    </div>
+    <div class="text-center bg-dark">
+      <small class="text-muted">© 2021 Boomerang, All Rights Reserved. Design with love by Pig</small>
     </div>
     <a id="backToTop"
        class="btn btn-primary btn-round"

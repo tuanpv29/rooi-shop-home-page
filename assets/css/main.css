@@ -6,14 +6,15 @@
 
 :root {
   --color-primary: #3db36b;
+  --color-primary-hover: #33965a;
   --white: #fff;
   --black: #000;
-  --gray: #ccc;
+  --blue: #0d6efd;
 }
 
-/* body {
-  font-family: "Roboto", sans-serif;
-} */
+body {
+  font-family: "Roboto";
+}
 
 .bg-primary {
   background-color: #3db36b !important;
@@ -26,6 +27,28 @@
   font-size: 0.75rem !important;
   line-height: 1.5;
   padding: 0;
+}
+
+#header-top-line .nav-link:hover {
+  background-color: #5cc786;;
+}
+
+#header-logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  position: relative !important;
+}
+
+#header-logo .hero-image {
+  background: url(../img/wp1881530.jpeg) no-repeat center;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.8;
 }
 
 .navbar-brand {
@@ -52,7 +75,7 @@
 
 .dropdown-menu .dropdown-item:hover {
   color: var(--white);
-  background: #5cc786;
+  background-color: #5cc786;
 }
 
 .navbar-toggler {
@@ -86,17 +109,16 @@
 
 .home,
 .shop-cart {
-  font-size: 1.875rem;
-  padding: 2.25rem 1.25rem;
+  font-size: 2rem;
+  padding: 1.3125rem;
 }
 
-.feature-box {
+.features-icons-item {
   text-align: center;
 }
 
-.feature-box .icon {
-  font-size: 3rem;
-  margin-bottom: 0.75rem;
+.features-icons-icon {
+  font-size: 4.5rem;
 }
 
 .btn {
@@ -113,7 +135,7 @@
 
 .btn-primary:hover {
   color: var(--white);
-  background-color: #33965a;
+  background-color: var(--color-primary-hover);
   border-color: #308d54;
 }
 
@@ -133,57 +155,45 @@ input {
   background-clip: unset !important;
 }
 
-.chips .chip {
+.new-products-card .card-header,
+.blog-card .card-header {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 0;
+}
+
+.new-products-card .chip {
   color: var(--black);
   padding: 4px 8px;
 }
 
 .chip.active {
   color: var(--white);
-  background: var(--gray);
+  background: var(--blue);
 }
 
-.footer {
-  color: var(--white);
-  background-color: #222;
+.footer-content .nav-link {
+  color: var(--black);
+  opacity: 0.6;
 }
 
-.footer .footer-content {
-  padding: 90px 0 16px;
-}
-
-.footer .nav-link {
-  opacity: 0.5;
-}
-
-.footer .nav-link:hover {
+.footer-content .nav-link:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
-.footer .social-media .nav-link {
+.social-media .nav-link {
   font-size: 1.5rem;
-  opacity: 0.5;
-}
-
-.footer .social-media .nav-link:hover {
-  opacity: 1;
-}
-
-.footer .footer-bar {
-  text-align: center;
-  padding: 22px 0;
-  border-top: 1px solid #2c2c2c;
 }
 
 #backToTop {
   position: fixed;
-  bottom: 1.5rem;
-  right: 1.5rem;
+  bottom: 2rem;
+  right: 2rem;
   z-index: 1020;
 }
 
-.btn-round {
-  border-radius: 50%;
+#backToTop.btn-round {
   width: 2.5rem;
   height: 2.5rem;
   padding: 0;
@@ -203,11 +213,11 @@ input {
     display: none;
   }
 
-  .dropdown-menu {
+  .navbar-collapse .dropdown-menu {
     background-color: var(--white);
   }
 
-  .dropdown-menu .dropdown-item {
+  .navbar-collapse .dropdown-menu .dropdown-item {
     color: var(--black);
   }
 
